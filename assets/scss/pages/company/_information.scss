@@ -1,0 +1,21 @@
+.information{
+  margin-top: 60px;
+  padding-bottom: 70px;
+  @include mq('desktop'){
+    margin-top: 120px;
+    padding-bottom: 140px;
+  }
+  &__images{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    @include mq('desktop'){
+      margin-top: 60px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    img{
+      width: 100%;
+    }
+  }
+}

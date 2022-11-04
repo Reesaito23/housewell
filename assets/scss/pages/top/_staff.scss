@@ -1,0 +1,22 @@
+.staff{
+  background-color: #FAFAFA;
+  padding: 60px 0;
+  &__title{
+    text-align: center;
+    padding-top: calc(10px + 34px);
+    @include mq('desktop'){
+      padding-top: calc(18px + 34px);
+    }
+    &::before{
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__button{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}

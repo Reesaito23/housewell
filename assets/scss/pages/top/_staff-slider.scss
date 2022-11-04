@@ -1,0 +1,43 @@
+.staff-slider{
+  margin-top: 40px;
+  .slick-list{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .slick-arrow{
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    border-radius: 50%;
+    &:hover{
+      background-color: rgba($color: #000000, $alpha: 0.3)
+    }
+  }
+  .slick-arrow:before{
+    content: "";
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      width: 10px;
+      height: 10px;
+  }
+  .slick-next{
+    right: 8%;
+    &::before{
+      transform: rotate(45deg);
+      left: 38%;
+    }
+  }
+  .slick-prev{
+    left: 8%;
+    &::before{
+      transform: rotate(-135deg);
+      right: 38%;
+    }
+
+  }
+}

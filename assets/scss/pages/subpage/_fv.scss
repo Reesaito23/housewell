@@ -1,0 +1,34 @@
+.fv{
+  padding-bottom: 20px;
+  &::before {
+    width: 30%;
+    height: 36vw;
+    content: "";
+    background-color: #4CB6EA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    @include mq('desktop') {
+      max-height: 310px;
+      width: 280px;
+      height: 19.4vw;
+    }
+  }
+
+  &::after {
+    width: 30%;
+    height: 30vw;
+    content: "";
+    background-color: #FFE100;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    @include mq('desktop'){
+      max-height: 200px;
+      width: 20%;
+        height: 12vw;
+    }
+  } 
+}

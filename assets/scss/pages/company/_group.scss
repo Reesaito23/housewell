@@ -1,0 +1,14 @@
+.group{
+  padding-top: 60px;
+  padding-bottom: 80px;
+  @include mq('desktop'){
+    padding-top: 120px;
+    padding-bottom: 190px;
+  }
+  &__block{
+    margin-top: 60px;
+    @include mq('desktop'){
+      margin-top: 80px;
+    }
+  }
+}

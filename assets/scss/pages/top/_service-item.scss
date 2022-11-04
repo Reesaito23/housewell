@@ -1,0 +1,49 @@
+.service-item{
+  &__num{
+    margin-top: 10px;
+    font-size: 10px;
+    color: #222222;
+    @include mq('desktop'){
+      margin-top: 20px;
+      font-size: 12px;
+    }
+  }
+  &__title{
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 14px;
+    @include mq('desktop'){
+      font-size: 28px;
+      margin-top: 15px;
+    }
+    span{
+      display: block;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+  }
+  &__textarea{
+    margin-top: 16px;
+    @include mq('desktop'){
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__text{
+    font-size: 11px;
+    line-height: 1.8;
+    color: #222222;
+    @include mq('desktop'){
+      font-size: 12px;
+      width: 70%;
+    }
+  }
+  &__button{
+    margin-top: 10px;
+    @include mq('desktop'){
+      width: 30%;
+      margin-top: 0;
+    }
+  }
+}

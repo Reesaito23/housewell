@@ -1,0 +1,52 @@
+.titlearea{
+  padding-top: 30px;
+  @include mq('desktop'){
+    padding-top: 40px;
+  }
+  &__breadcrumbs{
+    display: flex;
+    font-size: 12px;
+    @include mq('desktop'){
+      font-size: 14px;
+    }
+    a{
+      margin-right: 4px;
+      @include mq('desktop'){
+        margin-right: 8px;
+      }
+    }
+  }
+  &__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 34px;
+    padding-top: 44px;
+    position: relative;
+    margin-top: 20px;
+    @include mq('desktop'){
+      padding-top: 52px;
+      margin-top: 30px;
+      font-size: 40px;
+    }
+    .ja{
+      font-size: 16px;
+      display: block;
+      line-height: 1;
+      @include mq('desktop'){
+        font-size: 18px;
+      }
+    }
+    &::before{
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      height: 34px;
+    }
+    &--blue-green{
+      &::before{
+        content: url(../image/common/section-title-icon--blue-green.webp);
+      }
+    }
+  }
+}

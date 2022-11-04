@@ -1,0 +1,19 @@
+.c-layout{
+  &--lv0{
+    width: 100%;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &--lv1{
+    width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  &--lv2{
+    width: 80%;
+    margin-right: auto;
+      margin-left: auto;
+      max-width: 1200px;
+  }
+}

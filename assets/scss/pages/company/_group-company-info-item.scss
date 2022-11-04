@@ -1,0 +1,31 @@
+.group-company-info-item{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &__label{
+    width: 28%;
+    padding: 20px 0;
+    font-size: 12px;
+    border-bottom: 1px solid #45B0BA;
+    text-align: center;
+    @include mq('desktop'){
+      font-size: 16px;
+    }
+  }
+  &__block{
+    width: 68%;
+    text-align: left;
+    padding: 20px 20px;
+    font-size: 12px;
+    border-bottom: 1px solid #E0E0E0;
+    @include mq('desktop'){
+      font-size: 16px;
+    }
+  }
+  &__text{
+    line-height: 1.6;
+    &--blue{
+      color: #45B0BA;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.group-company{
+  &__name{
+    background-color: rgba($color: #45B0BA, $alpha: 0.04);
+    position: relative;
+    padding: 16px 16px 16px 56px;
+    font-size: 20px;
+    @include mq('desktop'){
+      padding: 20px 20px 20px 60px;
+      font-size: 24px;
+    }
+    &::before{
+      content: url(../image/common/section-title-icon--blue-green.webp);
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%) scale(0.7);
+      position: absolute;
+    }
+  }
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    @include mq('desktop'){
+      flex-direction: initial;
+      margin-top: 50px;
+    }
+  }
+  &__imagearea{
+    @include mq('desktop'){
+      max-width: 400px;
+      width: 40%;
+    }
+  }
+  &__info{
+    flex: 1;
+  }
+  &:not(:first-child){
+    margin-top: 50px;
+    @include mq('desktop'){
+      margin-top: 100px;
+    }
+  }
+}

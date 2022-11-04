@@ -1,0 +1,33 @@
+.company{
+  background-image: url("../image/toppage/company-background.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  position: relative;
+  @include mq('desktop'){
+    padding-left: 10%;
+    padding-top: 100px;
+  }
+  &::after{
+    background-color: #9A4F94;
+    width: 20%;
+    content: "";
+    height: 50px;
+    position: absolute;
+    top: -30px;
+    left: 0%;
+    z-index: -1;
+  }
+  &__title{
+    padding-left: calc(24px + 10px);
+    margin-left: 10%;
+    @include mq('desktop'){
+      margin-left: 0%;
+    }
+    &::before{
+      left: 0;
+      top: .4em;
+      transform: translateY(-50%);
+    }
+  }
+}

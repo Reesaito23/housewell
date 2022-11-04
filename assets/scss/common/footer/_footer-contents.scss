@@ -1,0 +1,12 @@
+.footer-contents{
+  padding-left: 5%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 5%;
+  flex: 1;
+  @include mq('desktop'){
+    display: flex;
+    padding-right: 2%;
+    justify-content: center;
+  }
+}

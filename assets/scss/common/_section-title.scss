@@ -1,0 +1,47 @@
+.c-section-title{
+  font-size: 32px;
+  position: relative;
+  line-height: 1;
+  @include mq('desktop'){
+    font-size: 50px;
+  }
+  .jp{
+    font-size: 12px;
+    display: block;
+    line-height: 1;
+    margin-top: 10px;
+    @include mq('desktop'){
+      font-size: 15px;
+      margin-top: 12px;
+    }
+  }
+  &::before{
+    position: absolute;
+    height: 34px;
+  }
+  &--pink{
+    &::before {
+      content: url("../image/common/section-title-icon--pink.webp");
+    }
+  }
+  &--purple{
+    &::before {
+      content: url("../image/common/section-title-icon--purple.webp");
+    }
+  }
+  &--green{
+    &::before {
+      content: url("../image/common/section-title-icon--green.webp");
+    }
+  }
+  &--blue{
+    &::before {
+      content: url("../image/common/section-title-icon--blue.webp");
+    }
+  }
+  &--blue-green{
+    &::before {
+      content: url("../image/common/section-title-icon--blue-green.webp");
+    }
+  }
+}

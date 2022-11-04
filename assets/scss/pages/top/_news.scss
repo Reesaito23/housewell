@@ -1,0 +1,33 @@
+.news{
+  padding: 60px 0 80px 0;
+  @include mq('desktop'){
+    padding: 160px 0;
+  }
+  input{
+    display: none;
+  }
+  &__block{
+    @include mq('desktop'){
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__navarea{
+    @include mq('desktop'){
+      width: 25%;
+    }
+  }
+  &__listarea{
+    @include mq('desktop'){
+      width: 70%;
+    }
+  }
+  &__title{
+    padding-left: calc(24px + 10px);
+    &::before{
+      left: 0;
+      top: .4em;
+      transform: translateY(-50%);
+    }
+  }
+}

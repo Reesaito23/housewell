@@ -1,0 +1,73 @@
+.footer-contents-navarea{
+  margin-top: 40px;
+  @include mq('desktop'){
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    padding-left: 10%;
+    margin-top: 0px;
+  }
+  &__title{
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  nav{
+    margin-top: 25px;
+  }
+  &__item{
+    color: #838383;
+    font-size: 14px;
+  }
+  &__menu{
+    @include mq('desktop'){
+      width: 55%;
+    }
+    .nav-list{
+      display: grid;
+        grid-template-columns: 47.5% 47.5%;
+        gap: 10px 5%;
+      @include mq('desktop'){
+        grid-template-columns: initial;
+        gap: 10px;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(5,1fr);
+        justify-content: space-between;
+      }
+    }
+  }
+  &__introduction{
+    width: 100%;
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.09);
+    margin-top: 30px;
+    padding-top: 30px;
+    @include mq('desktop'){
+      width: 40%;
+      border-top: initial;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-list{
+      display: grid;
+      grid-template-columns: 47.5% 47.5%;
+      gap: 10px 5%;
+      @include mq('desktop'){
+        gap: 6px;
+        grid-template-columns: initial;
+      }
+    }
+  }
+  &__service{
+    width: 100%;
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.09);
+    margin-top: 30px;
+    padding-top: 30px;
+    .nav-list{
+      display: grid;
+      justify-content: space-between;
+      gap: 16px;
+      grid-template-columns: 30% 30% 30%;
+    }
+  }
+
+}

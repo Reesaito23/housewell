@@ -1,0 +1,51 @@
+.header-nav-sublist{
+  transform: translateY(0%);
+  width: 100%;
+  margin-top: 10px;
+  @include mq('desktop'){
+    z-index: -10;
+    opacity: 0;
+    display: none;
+    transition: all .3s;
+    position: absolute;
+    bottom: 0px;
+    margin-top: 0;
+  }
+  &__item{
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    border-radius: 5px;
+    position: relative;
+    @include mq('desktop'){
+      width: 200%;
+    }
+    a{
+      color: #fff;
+      padding: 6px 14px;
+      font-size: 13px;
+      display: block;
+      @include mq('desktop'){
+        font-size: 15px;
+      }
+    }
+    &:not(:first-child){
+      margin-top: 5px;
+    }
+    &::after{
+      content: url("../image/common/arrow.svg");
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 14px;
+    }
+  }
+}
+@include mq('desktop'){
+  .header-nav__item:hover, .header-nav__item:focus-within{
+    .header-nav-sublist{
+      z-index: 10;
+      opacity: 1;
+      display: block;
+      transform: translateY(100%);
+    }
+  }
+}

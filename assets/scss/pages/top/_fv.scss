@@ -1,0 +1,71 @@
+.fv{
+  &::before{
+    width: 60%;
+    height: 50vh;
+    content: "";
+    background-color: #4CB6EA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    @include mq('desktop'){
+      width: 280px;
+      height: 30vh;
+    }
+  }
+  &::after{
+    width: 20%;
+    height: 50vh;
+    content: "";
+    background-color: #FFE100;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    @include mq('desktop'){
+      width: 280px;
+      height: 40vh;
+    }
+  }
+  &__image{
+    img{
+      width: 100%;
+    }
+  }
+  &__scroll{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    @include mq('desktop'){
+      width: 50px;
+    }
+    &-text{
+      @include mq('desktop'){
+        font-size: 12px;
+      }
+      font-size: 11px;
+      writing-mode: vertical-rl;
+    }
+    &-icon{
+      width: 20%;
+      margin-top: 10px;
+      @include mq('desktop'){
+        width: 40%;
+      }
+    }
+  }
+  &__parallax{
+    img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}

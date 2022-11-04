@@ -1,0 +1,111 @@
+.information-list-item{
+  @include mq('desktop'){
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__label{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #45B0BA;
+    @include mq('desktop'){
+      width: 28%;
+      padding: 40px 0;
+      font-size: 17px;
+    }
+  }
+  &__block{
+    padding: 20px 0px;
+    border-bottom: 1px solid #E0E0E0;
+    text-align: center;
+    font-size: 12px;
+    @include mq('desktop'){
+      width: 68%;
+      text-align: left;
+      padding: 40px 20px;
+      font-size: 17px;
+    }
+    &.two{
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      @include mq('desktop'){
+        justify-content: flex-start;
+        gap: 20px;
+        font-size: 16px;
+      }
+    }
+    &.blue{
+      color: #45B0BA;
+    }
+    &.estate{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+      @include mq('desktop'){
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    &.site{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 10px;
+    }
+    &-flex{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__text{
+    line-height: 2;
+    &.address ,&.business{
+      text-align: left;
+    }
+  }
+  &__button{
+    color: #fff;
+    background-color: #000000;
+    width: 40%;
+    max-width: 160px;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    @include mq('desktop'){
+      font-size: 14px;
+      width: 200px;
+    }
+    &::after{
+      content: "";
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      // right: 3px;
+      // width: 8px;
+      /* くの字を山なりに見た時、左側の長さ */
+      // height: 8px;
+      /* くの字を山なりに見た時、右側の長さ */
+      border-top: 2px solid #fff;
+      /* くの字を山なりに見た時、左側の太さと色 */
+      border-right: 2px solid #fff;
+      /* くの字を山なりに見た時、右側の太さと色 */
+      transform: rotate(45deg);
+      right: 10%;
+      width: .5em;
+      /* くの字を山なりに見た時、左側の長さ */
+      height: .5em;
+      /* くの字を山なりに見た時、右側の長さ */
+    }
+  }
+  &__map{
+    width: 100%;
+    margin-top: 20px;
+    height: 140px;
+    @include mq('desktop'){
+      height: 180px;
+    }
+  }
+}

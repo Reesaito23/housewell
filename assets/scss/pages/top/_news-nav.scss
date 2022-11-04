@@ -1,0 +1,24 @@
+.news-nav{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  @include mq('desktop'){
+    display: block;
+    margin-top: 60px;
+  }
+  &__item{
+    padding: 14px 0;
+    width: 30%;
+    display: block;
+    border-bottom: 1px solid #E0E0E0;
+    color: #919191;
+    font-size: 15px;
+    @include mq('desktop'){
+      width: 100%;
+    }
+  }
+}
+#news-news:checked~.news__navarea .news-nav .news-nav__item-news,#news-media:checked~.news__navarea .news-nav .news-nav__item-media,#news-ir:checked~.news__navarea .news-nav .news-nav__item-ir{
+  border-bottom: 1px solid #000000;
+  color: #333333;
+}

@@ -1,0 +1,62 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 100;
+  align-items: flex-start;
+  transform: translate(-50%);
+  @include mq('desktop'){
+    padding-right: 5%;
+    align-items: initial;
+  }
+  &__logo{
+    width: 20%;
+    min-width: 80px;
+    @include mq('desktop'){
+      width: 11.1vw;
+      max-width: 160px;
+      min-width: 100px;
+    }
+  }
+  &__ham{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span{
+      width: 26px;
+      max-width: 40px;
+      height: 3px;
+      background-color: #222222;
+      display: block;
+      transition: all 0.3s;
+      &:not(:first-child){
+        margin-top: 5px;
+      }
+    }
+
+  }
+  &.is--active{
+    .header__ham{
+      span{
+        &:not(:first-child){
+          margin-top: 0px;
+        }
+        &:nth-child(1){
+          transform: translate(0%, 0%) rotate(45deg);
+        }
+        &:nth-child(2){
+          transform: translateX(100vw);
+        }
+        &:nth-child(3){
+          transform: translate(0%, -150%) rotate(-45deg);
+        }
+      }
+    }
+  }
+}

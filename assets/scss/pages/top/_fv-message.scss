@@ -1,0 +1,35 @@
+.fv-message{
+  padding-left: 3%;
+  margin-top: -16px;
+  position: relative;
+  z-index: 10;
+  @include mq('desktop'){
+    margin-top: 0;
+    padding-left: 6%;
+    bottom: -80px;
+    left: 0;
+    position: absolute;
+  }
+  &__slogan{
+    &-en{
+      font-size: 20px;
+      font-weight: 700;
+      @include mq('desktop'){
+        font-size: 40px;
+      }
+    }
+    font-size: 15px;
+    font-weight: 600;
+    @include mq('desktop'){
+      font-size: 18px;
+    }
+  }
+  h1 {
+    font-weight: 700;
+    margin-left: -2%;
+    font-size: max(12vw, 40px);
+    @include mq('desktop'){
+      font-size: min(15vw,180px);
+    }
+  }
+}
