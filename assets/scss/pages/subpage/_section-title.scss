@@ -15,7 +15,12 @@
   }
   &--blue-green{
     &::before{
-      content: url(../image/common/section-title-icon--blue-green.webp);
+      content: url("../image/common/section-title-icon--blue-green.webp");
+    }
+  }
+  &--purple{
+    &::before {
+      content: url("../image/common/section-title-icon--purple.webp");
     }
   }
 }

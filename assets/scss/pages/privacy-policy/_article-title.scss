@@ -1,0 +1,26 @@
+.c-article-title{
+  background-color: rgba($color: #9A4F94, $alpha: 0.06);
+  padding: 16px 16px 11px 50px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  position: relative;
+  margin-bottom: 20px;
+  @include mq('desktop'){
+    padding: 20px 20px 15px 60px;
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  &::before{
+    content: url("../image/common/section-title-icon--purple.webp");
+    left: 13px;
+    top: 55%;
+    transform: translateY(-50%) scale(0.6);
+    position: absolute;
+    @include mq('desktop'){
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%) scale(0.7);
+    }
+  }
+}
