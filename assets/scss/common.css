@@ -8,6 +8,7 @@
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  max-width: 1500px;
 }
 .c-layout--lv2 {
   width: 80%;

@@ -151,6 +151,7 @@
   position: relative;
   text-align: center;
   padding-top: 48px;
+  font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   .subpage-section-title {
@@ -164,11 +165,18 @@
   position: absolute;
   height: 28px;
 }
+.subpage-section-title .sub {
+  display: block;
+  font-size: 16px;
+}
 .subpage-section-title--blue-green::before {
   content: url("../image/common/section-title-icon--blue-green.webp");
 }
 .subpage-section-title--purple::before {
   content: url("../image/common/section-title-icon--purple.webp");
+}
+.subpage-section-title--green::before {
+  content: url("../image/common/section-title-icon--green.webp");
 }
 
 .message {

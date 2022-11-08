@@ -1,0 +1,507 @@
+.fv {
+  padding-bottom: 20px;
+}
+.fv::before {
+  width: 30%;
+  height: 36vw;
+  content: "";
+  background-color: #4CB6EA;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .fv::before {
+    max-height: 310px;
+    width: 280px;
+    height: 19.4vw;
+  }
+}
+.fv::after {
+  width: 30%;
+  height: 30vw;
+  content: "";
+  background-color: #FFE100;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .fv::after {
+    max-height: 200px;
+    width: 20%;
+    height: 12vw;
+  }
+}
+
+.fv-message {
+  padding-left: max(9vw, 38px);
+  left: 0;
+  position: absolute;
+  top: 100px;
+}
+@media screen and (min-width: 768px) {
+  .fv-message {
+    padding-left: min(12.5vw, 200px);
+    top: 80px;
+  }
+}
+.fv-message__slogan {
+  font-size: 2.8vw;
+  font-weight: 600;
+}
+.fv-message__slogan-en {
+  font-size: 3.7vw;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .fv-message__slogan-en {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fv-message__slogan {
+    font-size: 12px;
+  }
+}
+.fv-message h1 {
+  margin-top: 0.2em;
+  font-weight: 700;
+  font-size: 8.8vw;
+}
+@media screen and (min-width: 768px) {
+  .fv-message h1 {
+    font-size: min(6vw, 100px);
+    margin-top: 0;
+  }
+}
+
+.titlearea {
+  padding-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .titlearea {
+    padding-top: 40px;
+  }
+}
+.titlearea__breadcrumbs {
+  display: flex;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .titlearea__breadcrumbs {
+    font-size: 14px;
+  }
+}
+.titlearea__breadcrumbs a {
+  margin-right: 4px;
+}
+@media screen and (min-width: 768px) {
+  .titlearea__breadcrumbs a {
+    margin-right: 8px;
+  }
+}
+.titlearea__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  padding-top: 44px;
+  position: relative;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .titlearea__title {
+    padding-top: 52px;
+    margin-top: 30px;
+    font-size: 40px;
+  }
+}
+.titlearea__title .ja {
+  font-size: 16px;
+  display: block;
+  line-height: 1;
+}
+@media screen and (min-width: 768px) {
+  .titlearea__title .ja {
+    font-size: 18px;
+  }
+}
+.titlearea__title::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  height: 34px;
+}
+.titlearea__title--blue-green::before {
+  content: url("../image/common/section-title-icon--blue-green.webp");
+}
+.titlearea__title--purple::before {
+  content: url("../image/common/section-title-icon--purple.webp");
+}
+.titlearea__title--green::before {
+  content: url("../image/common/section-title-icon--green.webp");
+}
+
+.subpage-section-title {
+  font-size: 32px;
+  position: relative;
+  text-align: center;
+  padding-top: 48px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .subpage-section-title {
+    font-size: 28px;
+  }
+}
+.subpage-section-title::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  position: absolute;
+  height: 28px;
+}
+.subpage-section-title .sub {
+  display: block;
+  font-size: 16px;
+}
+.subpage-section-title--blue-green::before {
+  content: url("../image/common/section-title-icon--blue-green.webp");
+}
+.subpage-section-title--purple::before {
+  content: url("../image/common/section-title-icon--purple.webp");
+}
+.subpage-section-title--green::before {
+  content: url("../image/common/section-title-icon--green.webp");
+}
+
+.precontents {
+  margin-top: 70px;
+  padding-bottom: 70px;
+}
+@media screen and (min-width: 768px) {
+  .precontents {
+    margin-top: 140px;
+    padding-bottom: 140px;
+  }
+}
+.precontents__message {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+.precontents__message span {
+  color: #8AB229;
+}
+@media screen and (min-width: 768px) {
+  .precontents__message {
+    font-size: 32px;
+  }
+}
+.precontents__text {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 2.3;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .precontents__text {
+    font-size: 20px;
+    margin-top: 80px;
+  }
+}
+.precontents__blocks {
+  margin-top: 70px;
+}
+@media screen and (min-width: 768px) {
+  .precontents__blocks {
+    margin-top: 140px;
+  }
+}
+
+.precontents-block {
+  background-color: rgba(138, 178, 41, 0.06);
+  padding: 30px 20px 30px 20px;
+}
+@media screen and (min-width: 768px) {
+  .precontents-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px 50px 20px;
+  }
+}
+.precontents-block:not(:first-child) {
+  margin-top: 30px;
+}
+.precontents-block__label {
+  position: relative;
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .precontents-block__label {
+    padding-left: 45px;
+    font-size: 24px;
+  }
+}
+.precontents-block__label::before {
+  content: url("../image/common/section-title-icon--green.webp");
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%) scale(0.7);
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .precontents-block__label::before {
+    left: 5%;
+  }
+}
+.precontents-block__list {
+  padding-left: 30px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .precontents-block__list {
+    width: 65%;
+    margin-top: 0px;
+  }
+}
+.precontents-block__list li {
+  line-height: 2.5;
+  position: relative;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .precontents-block__list li {
+    line-height: 3;
+    font-size: 18px;
+  }
+}
+.precontents-block__list li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #8AB229;
+  position: absolute;
+  left: -20px;
+  top: 1.3em;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .precontents-block__list li::before {
+    width: 9px;
+    height: 9px;
+    top: 1.5em;
+  }
+}
+
+.philosophy {
+  background-color: #FAFAFA;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+  .philosophy {
+    padding-bottom: 160px;
+    padding-top: 120px;
+  }
+}
+.philosophy__blocks {
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .philosophy__blocks {
+    margin-top: 80px;
+  }
+}
+
+.philosophy-block__message {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block__message {
+    font-size: 32px;
+  }
+}
+.philosophy-block__imagearea {
+  margin-top: 20px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block__imagearea {
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block__image {
+    position: absolute;
+    width: 50%;
+    top: -20px;
+    z-index: 10;
+  }
+}
+.philosophy-block__contents {
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 0;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block__contents {
+    margin-top: 0;
+    width: 60%;
+  }
+}
+.philosophy-block__contents-figure {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.philosophy-block:nth-of-type(2n-1) .philosophy-block__image {
+  left: 0;
+}
+.philosophy-block:nth-of-type(2n-1) .philosophy-block__contents {
+  margin-right: 0;
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block:nth-of-type(2n-1) .philosophy-block__contents-figure {
+    transform: translateX(7%);
+  }
+}
+.philosophy-block:nth-of-type(2n) .philosophy-block__image {
+  right: 0;
+}
+.philosophy-block:nth-of-type(2n) .philosophy-block__contents {
+  margin-left: 0;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block:nth-of-type(2n) .philosophy-block__contents-figure {
+    transform: translateX(-7%);
+  }
+}
+.philosophy-block:not(:first-child) {
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block:not(:first-child) {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .philosophy-block-contents {
+    padding: 60px 0;
+  }
+}
+.philosophy-block-contents__block {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block-contents__block {
+    transform: translateX(7%);
+    width: 70%;
+  }
+}
+.philosophy-block-contents__title {
+  font-weight: 700;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block-contents__title {
+    font-size: 24px;
+  }
+}
+.philosophy-block-contents__contents {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block-contents__contents {
+    margin-top: 40px;
+  }
+}
+.philosophy-block-contents__text {
+  color: #8AB229;
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block-contents__text {
+    font-size: 18px;
+  }
+}
+.philosophy-block-contents__list {
+  margin-top: 20px;
+  padding-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block-contents__list {
+    margin-top: 30px;
+  }
+}
+.philosophy-block-contents__list li {
+  position: relative;
+  font-size: 12px;
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block-contents__list li {
+    font-size: 16px;
+  }
+}
+.philosophy-block-contents__list li:not(:first-child) {
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block-contents__list li:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+.philosophy-block-contents__list li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #8AB229;
+  position: absolute;
+  left: -20px;
+  top: 1em;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .philosophy-block-contents__list li::before {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+.tert {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 768px) {
+  .tert {
+    padding-top: 120px;
+    padding-bottom: 200px;
+  }
+}
+.tert__block {
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .tert__block {
+    margin-top: 80px;
+  }
+}/*# sourceMappingURL=philosophy.css.map */

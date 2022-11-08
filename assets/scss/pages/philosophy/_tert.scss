@@ -1,0 +1,14 @@
+.tert{
+  padding-top: 60px;
+  padding-bottom: 100px;
+  @include mq('desktop'){
+    padding-top: 120px;
+    padding-bottom: 200px;
+  }
+  &__block{
+    margin-top: 40px;
+    @include mq('desktop'){
+      margin-top: 80px;
+    }
+  }
+}

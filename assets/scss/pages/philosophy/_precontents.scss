@@ -1,0 +1,36 @@
+.precontents{
+  margin-top: 70px;
+  padding-bottom: 70px;
+  @include mq('desktop'){
+    margin-top: 140px;
+    padding-bottom: 140px;
+  }
+  &__message{
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    span{
+      color: #8AB229;
+    }
+    @include mq('desktop'){
+      font-size: 32px;
+    }
+  }
+  &__text{
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 2.3;
+    text-align: center;
+    letter-spacing: 0.1em;
+    @include mq('desktop'){
+      font-size: 20px;
+      margin-top: 80px;
+    }
+  }
+  &__blocks{
+    margin-top: 70px;
+    @include mq('desktop'){
+      margin-top: 140px;
+    }
+  }
+}

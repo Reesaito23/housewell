@@ -1,0 +1,66 @@
+.precontents-block{
+  background-color: rgba($color: #8AB229, $alpha: 0.06);
+  padding: 30px 20px 30px 20px;
+  @include mq('desktop'){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px 50px 20px;
+  }
+  &:not(:first-child){
+    margin-top: 30px;
+  }
+  &__label{
+    position: relative;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    @include mq('desktop'){
+      padding-left: 45px;
+      font-size: 24px;
+    }
+    &::before{
+      content: url("../image/common/section-title-icon--green.webp");
+      top: 50%;
+      left: 0%;
+      transform: translateY(-50%) scale(.7);
+      position: absolute;
+      @include mq('desktop'){
+        left: 5%;
+      }
+    }
+  }
+  &__list{
+    padding-left: 30px;
+    margin-top: 30px;
+    @include mq('desktop'){
+      width: 65%;
+      margin-top: 0px;
+    }
+    li{
+      line-height: 2.5;
+      position: relative;
+      font-size: 14px;
+      @include mq('desktop'){
+        line-height: 3;
+        font-size: 18px;
+      }
+      &::before{
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #8AB229;
+        position: absolute;
+        left: -20px;
+        top: 1.3em;
+        transform: translateY(-50%);
+        @include mq('desktop'){
+          width: 9px;
+          height: 9px;
+          top: 1.5em;
+        }
+      }
+    }
+  }
+}
