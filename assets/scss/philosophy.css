@@ -147,6 +147,9 @@
 .titlearea__title--yellow::before {
   content: url("../image/common/section-title-icon--yellow.webp");
 }
+.titlearea__title--blue::before {
+  content: url("../image/common/section-title-icon--blue.webp");
+}
 
 .subpage-section-title {
   font-size: 32px;
@@ -188,6 +191,9 @@
 }
 .subpage-section-title--yellow::before {
   content: url("../image/common/section-title-icon--yellow.webp");
+}
+.subpage-section-title--blue::before {
+  content: url("../image/common/section-title-icon--blue.webp");
 }
 
 .precontents {
