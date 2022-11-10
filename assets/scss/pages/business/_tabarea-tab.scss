@@ -1,0 +1,48 @@
+.tabarea-tab{
+  padding: 15px 20px;
+  opacity: .4;
+  @include mq('desktop'){
+    display: flex;
+    align-items: center;
+  }
+  &.open{
+    background-color: #FAFAFA;
+    opacity: 1;
+  }
+  &:hover{
+    background-color: #FAFAFA;
+    opacity: 1;
+  }
+  &__image{
+    @include mq('desktop'){
+      width: 45%;
+    }
+  }
+  &__block{
+    margin-top: 16px;
+    @include mq('desktop'){
+      margin-top: 0;
+      padding-left: 3%;
+      width: 55%;
+    }
+  }
+  &__num{
+    font-size: 11px;
+  }
+  &__name{
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 6px;
+    @include mq('desktop'){
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
+  &__text{
+    font-size: 12px;
+    font-weight: 700;
+    @include mq('desktop'){
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.flow-contents-block{
+  position: relative;
+  @include mq('desktop'){
+    min-height: 480px;
+  }
+  &__image{
+    width: 100%;
+    @include mq('desktop'){
+      width: 50%;
+      position: relative;
+      z-index: 10;
+    }
+  }
+  &__contents{
+    width: 100%;
+    background-color: #FAFAFA;
+    @include mq('desktop'){
+      position: absolute;
+      top: 40px;
+      width:55%;
+      min-height: 100%;
+    }
+  }
+  &:nth-of-type(2n-1){
+    .flow-contents-block{
+      &__image{
+        // left: 0;
+      }
+      &__contents{
+        right: 0;
+        padding: 20px;
+        @include mq('desktop'){
+          padding: 40px 40px 40px 8%;
+        }
+      }
+    }
+  }
+  &:nth-of-type(2n){
+    .flow-contents-block{
+      &__image{
+        margin-right: 0;
+        margin-left: auto;
+      }
+      &__contents{
+        left: 0;
+        padding: 20px;
+        @include mq('desktop'){
+          padding: 40px 8% 40px 40px;
+        }
+      }
+    }
+  }
+  &:not(:first-child){
+    margin-top: 50px;
+    @include mq('desktop'){
+      margin-top: 100px;
+    }
+  }
+  &__title{
+    color: #F0C10B;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #F0C10B;
+    @include mq('desktop'){
+      font-size: 26px;
+    }
+    .num{
+      font-size: 24px;
+      margin-right: .3em;
+      @include mq('desktop'){
+        font-size: 40px;
+      }
+    }
+  }
+  &__text{
+    font-size: 13px;
+    line-height: 2;
+    margin-top: 20px;
+    @include mq('desktop'){
+      font-size: 16px;
+      margin-top: 30px;
+    }
+  }
+}

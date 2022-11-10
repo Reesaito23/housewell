@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハウスウェル株式会社</title>
+
+    <link rel="stylesheet" href="assets/css/destyle.css">
+    <link rel="stylesheet" href="assets/scss/common.css">
+    <link rel="stylesheet" href="assets/scss/business.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Spartan font / Noto Sans JP 読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet">
+    <!-- Tailwindcssの読み込み -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- Jqueryの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <!-- Slickslider css の読み込み -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Rellax の読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header c-layout--lv0">
+      <a href="index.html">
+        <img class="header__logo" src="assets/image/common/header/logo.webp" alt="">
+      </a>
+      <nav class="header__nav header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item"><a href="business.html">BUSINESS<span class="num">01</span></a></li>
+          <li class="header-nav__item"><a href="company.html">COMPANY<span class="num">02</span></a>
+            <ul class="header-nav-sublist">
+              <li class="header-nav-sublist__item"><a href="philosophy.html">企業理念</a></li>
+              <li class="header-nav-sublist__item"><a href="company.html">会社概要</a></li>
+            </ul>
+          </li>
+          <li class="header-nav__item"><a href="staff.html">STAFF<span class="num">03</span></a></li>
+          <li class="header-nav__item"><a href="faq.html">FAQ<span class="num">04</span></a></li>
+          <li class="header-nav__item"><a href="faq.html">RECRUIT<img src="assets/image/common/icon--link.svg" alt=""><span
+                class="num">05</span></a></li>
+          <li class="header-nav__item"><a href="faq.html">CONTACT<span class="num">06</span></a></li>
+        </ul>
+      </nav>
+      <div class="header__ham md:hidden">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- fv -->
+    <section id="fv" class="fv c-layout--lv0">
+      <img class="fv__image hidden md:block" src="assets/image/subpage/fv-image.png" alt="">
+      <img class="fv__image md:hidden" src="assets/image/subpage/fv-image--sp.png" alt="">
+      <div class="fv-message">
+        <p class="fv-message__slogan-en">We wish for Your Happiness.</p>
+        <p class="fv-message__slogan">ハウスウェルは、総合不動産業として<br class="md:hidden">お客様のさまざまなニーズにお応えします。</p>
+        <h1><span>H</span><span>a</span><span>p</span><span>p</span><span>i</span><span>n</span><span>e</span><span>s</span><span>s</span><span>.</span></h1>
+      </div>
+    </section>
+
+    <!-- titlearea -->
+    <section class="titlearea c-layout--lv2">
+      <div class="titlearea__breadcrumbs">
+        <a href="index.html">TOP ></a>
+        <p>事業紹介</p>
+      </div>
+      <h1 class="titlearea__title titlearea__title--yellow">BUSINESS<span class="ja">事業紹介</span></h1>
+    </section>
+
+    <!-- tabarea タブエリア -->
+    <section class="tabarea c-layout--lv0">
+      <div class="c-layout--lv1 tabarea__block">
+        <a href="business.html" class="tabarea__tab tabarea-tab open">
+          <img src="assets/image/business/tab-image01.webp" alt="" class="tabarea-tab__image">
+          <div class="tabarea-tab__block">
+            <p class="tabarea-tab__num">Our Service 01</p>
+            <p class="tabarea-tab__name">不動産コンサルティング事業部</p>
+            <p class="tabarea-tab__text">不動産売買仲介</p>
+          </div>
+        </a>
+        <a href="business-02.html" class="tabarea__tab tabarea-tab">
+          <img src="assets/image/business/tab-image02.webp" alt="" class="tabarea-tab__image">
+          <div class="tabarea-tab__block">
+            <p class="tabarea-tab__num">Our Service 02</p>
+            <p class="tabarea-tab__name">プロパティマネジメント事業部</p>
+            <p class="tabarea-tab__text">賃貸仲介・管理</p>
+          </div>
+        </a>
+        <a href="business-03.html" class="tabarea__tab tabarea-tab">
+          <img src="assets/image/business/tab-image03.webp" alt="" class="tabarea-tab__image">
+          <div class="tabarea-tab__block">
+            <p class="tabarea-tab__num">Our Service 03</p>
+            <p class="tabarea-tab__name">アセットマネジメント事業部</p>
+            <p class="tabarea-tab__text">投資不動産売買仲介</p>
+          </div>
+        </a>
+        <a href="business-04.html" class="tabarea__tab tabarea-tab">
+          <img src="assets/image/business/tab-image04.webp" alt="" class="tabarea-tab__image">
+          <div class="tabarea-tab__block">
+            <p class="tabarea-tab__num">Our Service 04</p>
+            <p class="tabarea-tab__name">アーキテクト事業部</p>
+            <p class="tabarea-tab__text">注文建築・建売</p>
+          </div>
+        </a>
+        <a href="business-05.html" class="tabarea__tab tabarea-tab">
+          <img src="assets/image/business/tab-image05.webp" alt="" class="tabarea-tab__image">
+          <div class="tabarea-tab__block">
+            <p class="tabarea-tab__num">Our Service 05</p>
+            <p class="tabarea-tab__name">リノベーション事業部</p>
+            <p class="tabarea-tab__text">住宅リフォーム</p>
+          </div>
+        </a>
+        <a href="business-06.html" class="tabarea__tab tabarea-tab">
+          <img src="assets/image/business/tab-image06.webp" alt="" class="tabarea-tab__image">
+          <div class="tabarea-tab__block">
+            <p class="tabarea-tab__num">Our Service 06</p>
+            <p class="tabarea-tab__name">エスクローチーム</p>
+            <p class="tabarea-tab__text">FP・保険代理業</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- tabcontents 内容 -->
+    <section class="tabcontents">
+      <h2 class="subpage-section-title subpage-section-title--yellow"><span class="num">Our Service 01</span>不動産コンサルティング事業部<span class="sub">不動産売買仲介</span></h2>
+      <div class="tabcontents-pre c-layout--lv0">
+        <img class="tabcontents-pre__image" src="assets/image/business/business-01-pre.webp" alt="">
+        <div class="tabcontents-pre-textarea">
+          <p class="tabcontents-pre-textarea__title">スピーディーな情報提供で安心の取引</p>
+          <p class="tabcontents-pre-textarea__text">
+            不動産は資産であるため、売主様と買主様が満足いく取引が理想。<br>
+            ハウスウェルでは、インターネットやチラシを利用するだけではなく、<br>
+            約3万人いる顧客会 員様へスピーディーに情報提供を行い、ご希望に添えるお相手とマッチングさせていただきます。<br>
+            もちろん、不動産売買に関わる税制面でのサポートも充実。
+          </p>
+          <div class="tabcontents-pre-textarea-block">
+            <p class="tabcontents-pre-textarea-block__label">おもな事業内容</p>
+            <ul class="tabcontents-pre-textarea-block__list">
+              <li>不動産売買仲介</li>
+              <li>税金相談窓口</li>
+              <li>売却コンサルティング</li>
+              <li>資産運用</li>
+              <li>リースバック</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tabcontents-fp c-layout--lv2">
+        <h3 class="c-businesspage-title">FPソフトを使った ファイナンシャル プランニングを無料で実施</h3>
+        <div class="tabcontents-fp__block">
+          <div class="tabcontents-fp__textarea">
+            <p class="tabcontents-fp__text">
+              お住まいの購入を考える場合、
+              賃貸か購入か、戸建かマンションかの決断はとても大事。そのため、どちらの選択を行った方が理想的かをシミュレーションさせていただきます。不動産を手放そうかご検討中なら、買い時、売り時、売り方、買い方についてもしっかりとご説明をさせていただきます。顧問税理士による無料税金相談も受け付けておりますのでお気軽にご相談ください。
+            </p>
+            <p class="tabcontents-fp__sim">納得いくまで シミュレーションいたします</p>
+            <p class="tabcontents-fp__sim-text">賃貸、注文住宅、リノベーションなど様々な ご相談も受け付けております。 購入から管理までをワンストップで 一括サポートいたします。</p>
+          </div>
+          <img class="tabcontents-fp__image" src="assets/image/business/business-01-fp.webp" alt="">
+        </div>
+        <p class="tabcontents-fp__message">
+          全国センチュリー21加盟店約980店舗中<br>
+          2019年~2021年 <span class="yellow">3年連続売上全国1位</span>
+        </p>
+      </div>
+      <div class="tabcontents-realize c-layout--lv2">
+        <h3 class="c-businesspage-title">情報の多さが 買主様の希望を実現</h3>
+        <div class="tabcontents-realize__block">
+          <img class="tabcontents-realize__image" src="assets/image/business/business-01-realization.webp" alt="">
+          <div class="tabcontents-realize__textarea">
+            <p class="tabcontents-realize__text">
+              2015年~2021年において、 中古不動産取扱件数全国1位となりました。不動産の売り情報が集まる会社は、買主様のご希望に添える物件を提供できる会社。
+              もちろん、買主様の希望に添えるだけではなく、売主様へもファイナンシャル・プランニングのシミュレーション実施と物件に対する保証制度の提供を行い、安心で安全な取引を可能にしております。<br><br>
+              
+              中古物件を売却される際にリフォームを行うお客様がほとんど。そのため、リフォーム後の物件をイメージしやすいように同社リノベーション事業部と協力し高性能CGを使った完成予想図を無料で作成いたします。総合不動産ならではのワンストップのスピーディーさでご提供いたします。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flow c-layout--lv2 business-01">
+        <h3 class="c-businesspage-title">契約の流れ</h3>
+        <div class="flow__block">
+          <div class="flow__item">
+            <p class="flow__num">STEP<span>01</span></p>
+            <div class="flow__flag">
+              <img class="flow__flag-image" src="assets/image/business/flow-01.webp" alt="">
+              <p class="flow__flag-text">物件調査・写真撮影</p>
+            </div>
+          </div>
+          <div class="flow__item">
+            <p class="flow__num">STEP<span>02</span></p>
+            <div class="flow__flag">
+              <img class="flow__flag-image" src="assets/image/business/flow.webp" alt="">
+              <p class="flow__flag-text">物件入稿</p>
+            </div>
+          </div>
+          <div class="flow__item">
+            <p class="flow__num">STEP<span>03</span></p>
+            <div class="flow__flag">
+              <img class="flow__flag-image" src="assets/image/business/flow.webp" alt="">
+              <p class="flow__flag-text">物件下見</p>
+            </div>
+          </div>
+          <div class="flow__item">
+            <p class="flow__num">STEP<span>04</span></p>
+            <div class="flow__flag">
+              <img class="flow__flag-image" src="assets/image/business/flow.webp" alt="">
+              <p class="flow__flag-text">ご案内</p>
+            </div>
+          </div>
+          <div class="flow__item">
+            <p class="flow__num">STEP<span>05</span></p>
+            <div class="flow__flag">
+              <img class="flow__flag-image" src="assets/image/business/flow.webp" alt="">
+              <p class="flow__flag-text">ご契約</p>
+            </div>
+          </div>
+          <div class="flow__item">
+            <p class="flow__num">STEP<span>06</span></p>
+            <div class="flow__flag">
+              <img class="flow__flag-image" src="assets/image/business/flow.webp" alt="">
+              <p class="flow__flag-text">お引渡し</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flow-contents c-layout--lv2">
+        <div class="flow-contents__blocks">
+          <div class="flow-contents-block">
+            <img class="flow-contents-block__image" src="assets/image/business/business01-flow01.webp" alt="">
+            <div class="flow-contents-block__contents">
+              <p class="flow-contents-block__title"><span class="num">01</span>物件調査・写真撮影</p>
+              <p class="flow-contents-block__text">
+                売主様と買主様、ともに満足のいく取引を提案するには正確な情報が不可欠です。<br>
+                建築基準法や登記情報などにもとづき、どのような物件なのかを徹底調査。<br>
+                さらに売り物件のアピールポイントを踏まえて、一眼レフで原稿に使用する写真を撮影します。
+              </p>
+            </div>
+          </div>
+          <div class="flow-contents-block">
+            <img class="flow-contents-block__image" src="assets/image/business/business01-flow02.webp" alt="">
+            <div class="flow-contents-block__contents">
+              <p class="flow-contents-block__title"><span class="num">02</span>ー物件入稿</p>
+              <p class="flow-contents-block__text">
+                『SUUMO』や『HOME’S』といった物件を紹介する媒体に、原稿を入稿します。<br>
+                売主様からヒアリングした内容を理解し、物件の良い部分をしっかりアピールできるよう、ターゲットに合わせて情報をピックアップ。<br>
+                宣伝効果が高まるよう、文章や写真を工夫するのがポイントです。
+              </p>
+            </div>
+          </div>
+          <div class="flow-contents-block">
+            <img class="flow-contents-block__image" src="assets/image/business/business01-flow03.webp" alt="">
+            <div class="flow-contents-block__contents">
+              <p class="flow-contents-block__title"><span class="num">03</span>物件下見</p>
+              <p class="flow-contents-block__text">
+                ご案内時にお客様へより良い情報をご提供できるよう、物件や周辺を下見します。<br>
+                大きな公園やスーパー、人気のスポットなどが近くにあれば、物件の魅力になります。<br>
+                また車の通行しやすさなどの立地の特徴も、しっかりチェックしたいポイントです。<br>
+                具体的な情報を多く集めることで、提案に説得力が出ます。
+              </p>
+            </div>
+          </div>
+          <div class="flow-contents-block">
+            <img class="flow-contents-block__image" src="assets/image/business/business01-flow04.webp" alt="">
+            <div class="flow-contents-block__contents">
+              <p class="flow-contents-block__title"><span class="num">04</span>ご案内</p>
+              <p class="flow-contents-block__text">
+                ご案内時には、「その物件でどんな暮らしができるか」というイメージを伝えます。<br>
+                物件下見で得た情報をもとに、買主様に寄り添い説明し、信頼関係を築きます。<br>
+                1日に複数物件をご案内する場合もあるので、スムーズに回れるようルート確認などの事前準備も大切です。
+              </p>
+            </div>
+          </div>
+          <div class="flow-contents-block">
+            <img class="flow-contents-block__image" src="assets/image/business/business01-flow05.webp" alt="">
+            <div class="flow-contents-block__contents">
+              <p class="flow-contents-block__title"><span class="num">05</span>ご契約</p>
+              <p class="flow-contents-block__text">
+                気に入ってくださった物件の詳細情報や法律的な部分を、売主様にしっかりとご説明。<br>
+                マイホームは人生のなかでも大きな買い物です。<br>
+                売主様に心から満足いただけるよう、分かりやすく丁寧な伝え方を徹底し、不安を取り除きます。
+              </p>
+            </div>
+          </div>
+          <div class="flow-contents-block">
+            <img class="flow-contents-block__image" src="assets/image/business/business01-flow06.webp" alt="">
+            <div class="flow-contents-block__contents">
+              <p class="flow-contents-block__title"><span class="num">06</span>お引渡し</p>
+              <p class="flow-contents-block__text">
+                買主様に夢のマイホームをお引渡しします。<br>
+                取引が完了したら、「おめでとうございます！」とお祝いの言葉をかけて喜びを分かち合います。<br>
+                買主様の笑顔が、なによりの達成感とやりがいにつながる瞬間です。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- コンタクトブロック -->
+    <section class="contact-block" id="contact-block">
+      <div class="c-layout--lv3 contact-block__wrap">
+        <div class="contact-block__telarea contact-block__item">
+          <p class="contact-block__title">電話でお問い合わせ</p>
+          <p class="contact-block__tel">03-3614-3317</p>
+          <p class="contact-block__text">受付時間：00:00 - 00:00</p>
+        </div>
+        <div class="contact-block__formarea contact-block__item">
+          <p class="contact-block__title">メールでお問い合わせ</p>
+          <a href="" class="contact-block__button">お問い合わせフォーム</a>
+          <p class="contact-block__text">お気軽にお問い合わせください</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <div class="footer-contents">
+        <div class="footer-contents-logoarea">
+          <img src="assets/image/common/footer/logo.webp" alt="">
+          <p class="footer-contents-logoarea__address">〒330-0852<br>埼玉県さいたま市大宮区大成町３丁目４１４</p>
+          <small class="footer-contents-logoarea__copy-right">Copyright © 2022 ハウスウェル株式会社 All rights reserved.</small>
+        </div>
+        <div class="footer-contents__navarea footer-contents-navarea">
+          <div class="footer-contents-navarea__menu">
+            <p class="footer-contents-navarea__title">メニュー</p>
+            <nav>
+              <ul class="footer-contents-navarea__list nav-list">
+                <li>
+                  <a href="business.html" class="footer-contents-navarea__item">事業紹介</a>
+                </li>
+                <li>
+                  <a href="company.html" class="footer-contents-navarea__item">会社情報</a>
+                </li>
+                <li>
+                  <a href="staff.html" class="footer-contents-navarea__item">スタッフ紹介</a>
+                </li>
+                <li>
+                  <a href="faq.html" class="footer-contents-navarea__item">よくあるご質問</a>
+                </li>
+                <li>
+                  <a class="footer-contents-navarea__item footer-contents-navarea__item-recruit" href="https://housewell-recruit.jp/"
+                    target="_blank" rel="noopener noreferrer">採用情報</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="footer-contents-navarea__item">お問い合わせ</a>
+                </li>
+                <li>
+                  <a href="privacy-policy.html" class="footer-contents-navarea__item">プライバシポリシー</a>
+                </li>
+                <li>
+                  <a href="sitemap.html" class="footer-contents-navarea__item">サイトマップ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-contents-navarea__introduction">
+            <p class="footer-contents-navarea__title">事業紹介</p>
+            <nav>
+              <ul class="footer-contents-navarea__list nav-list">
+                <li>
+                  <a href="" class="footer-contents-navarea__item">不動産コンサルティング事業部</a>
+                </li>
+                <li>
+                  <a href="" class="footer-contents-navarea__item">プロパティマネジメント事業部</a>
+                </li>
+                <li>
+                  <a href="" class="footer-contents-navarea__item">アセットマネジメント事業部</a>
+                </li>
+                <li>
+                  <a href="" class="footer-contents-navarea__item">アーキテクト事業部</a>
+                </li>
+                <li>
+                  <a href="" class="footer-contents-navarea__item">エスクローチーム</a>
+                </li>
+                <li>
+                  <a href="" class="footer-contents-navarea__item">リノベーション事業部</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-contents-navarea__service">
+            <p class="footer-contents-navarea__title">Our Service</p>
+            <nav>
+              <ul class="footer-contents-navarea__list nav-list">
+                <li>
+                  <a href="https://www.housewell.jp/" class="footer-contents-navarea__item" target="_blank"
+                    rel="noopener noreferrer">本店</a>
+                </li>
+                <li>
+                  <a href="https://toda-housewell.jp/" class="footer-contents-navarea__item" target="_blank"
+                    rel="noopener noreferrer">戸田駅店</a>
+                </li>
+                <li>
+                  <a href="https://utsunomiya-housewell.jp/" class="footer-contents-navarea__item" target="_blank"
+                    rel="noopener noreferrer">宇都宮店</a>
+                </li>
+                <li>
+                  <a href="https://east-housewell.jp/" class="footer-contents-navarea__item" target="_blank"
+                    rel="noopener noreferrer">埼玉東</a>
+                </li>
+                <li>
+                  <a href="https://housewell-architect.com/" class="footer-contents-navarea__item" target="_blank"
+                    rel="noopener noreferrer">建築サイト</a>
+                </li>
+                <li>
+                  <a href="https://www.housewell-toushi.jp/" class="footer-contents-navarea__item" target="_blank"
+                    rel="noopener noreferrer">投資不動産</a>
+                </li>
+                <li>
+                  <a href="https://www.apamanweb.com/" class="footer-contents-navarea__item" target="_blank"
+                    rel="noopener noreferrer">賃貸仲介</a>
+                </li>
+                <li>
+                  <a href="https://housewell-recruit.jp/" class="footer-contents-navarea__item" target="_blank"
+                    rel="noopener noreferrer">リクルート</a>
+                </li>
+                <li>
+                  <a href="https://housewell-satei.com/" class="footer-contents-navarea__item" target="_blank"
+                    rel="noopener noreferrer">売却サイト</a>
+                </li>
+                <li>
+                  <a href="https://housewell.dqc.jp/china" class="footer-contents-navarea__item" target="_blank"
+                    rel="noopener noreferrer">中国サイト</a>
+                </li>
+                <li>
+                  <a href="https://7plus.jp/" class="footer-contents-navarea__item" target="_blank"
+                    rel="noopener noreferrer">nanairo+</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="footer__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3231.2877789850304!2d139.6124415153236!3d35.91545542469773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c1d692e5b773%3A0x10b0a56b563a9724!2z44OP44Km44K544Km44Kn44Or!5e0!3m2!1sja!2stw!4v1664972838336!5m2!1sja!2stw"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      // スマホメニュー
+      const headerHeight = $('header').height();
+      const header = $('.header');
+      const headerNav = $('.header-nav');
+      const navHamClass = $('.header__ham');
+      const SPheader_Active_ClassName = "is--active"
+      const windowWidth = $(window).width();
+      const widthPC = 768;
+
+      $(window).on('load', function () {
+        if (windowWidth < widthPC) {
+          headerNav.css('padding-top', headerHeight);
+        }
+      });
+      navHamClass.on('click', function () {
+        header.toggleClass(SPheader_Active_ClassName);
+      });
+
+      // 沿革のdotに1列の高さを付与する。
+      $(window).on('load', function (){
+        const historyDot = [$('.history__dot')];
+        const historyRow = [$('.history__row')];
+        for(let i = 0;i<historyDot.length;i++){
+          const historyRowHeight = historyRow[i].outerHeight();
+          historyDot[i].css('height', historyRowHeight);
+          console.log(historyRowHeight);
+        }
+      });
+    </script>
+  </body>
+</html>

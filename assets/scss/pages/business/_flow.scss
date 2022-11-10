@@ -1,0 +1,85 @@
+.flow{
+  margin-top: 40px;
+  @include mq('desktop'){
+    margin-top: 80px;
+  }
+  &__block{
+    display: grid;
+    margin-top: 20px;
+    @include mq('desktop'){
+      margin-top: 30px;
+    }
+  }
+  &__num{
+    color: #F0C10B;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    @include mq('desktop'){
+      font-size: 16px;
+    }
+    span{
+      display: block;
+      font-size: 24px;
+      line-height: 1;
+      @include mq('desktop'){
+        font-size: 40px;
+      }
+    }
+  }
+  &__flag{
+    position: relative;
+    margin-top: 5px;
+    &-text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: #F0C10B;
+      font-size: 16px;
+      transform: translate(-50%,-50%);
+      white-space: nowrap;
+      @include mq('desktop'){
+        font-size: 24px;
+      }
+    }
+  }
+  &.business-01{
+    .flow{
+      &__block{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px 0px;
+        @include mq('desktop'){
+          grid-template-columns: repeat(3, 1fr);
+          gap: 36px 0px;
+        }
+      }
+      &__item{
+        &:nth-child(3n-2){
+          margin-right: -6px;
+        }
+        &:nth-child(3n-1){
+          margin-right: -6px;
+        }
+        &:nth-child(3n){
+          margin-right: -6px;
+        }
+      }
+    }
+  }
+    &.business-04 {
+      .flow {
+        &__block {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px 0px;
+  
+          @include mq('desktop') {
+            gap: 36px 0px;
+          }
+        }
+  
+        &__item {
+          margin-right: -12px;
+        }
+      }
+    }
+}

@@ -1,0 +1,55 @@
+.tabcontents-pre-textarea-block{
+  margin-top: 20px;
+  background-color: #FFFDF5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px 30px 20px;
+  @include mq('desktop'){
+    margin-top: 50px;
+    padding: 40px 20px 40px 20px;
+  }
+  &__label{
+    padding-left: 30px;
+    font-size: 18px;
+    position: relative;
+    @include mq('desktop'){
+      font-size: 20px;
+    }
+    &::before {
+        content: url("../image/common/section-title-icon--yellow.webp");
+        top: .8em;
+        left: 0%;
+        transform: translateY(-50%) scale(0.7);
+        position: absolute;
+      }
+  }
+  &__list{
+    width: 430px;
+    margin-top: 0px;
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px 55px;
+    li {
+        line-height: 2;
+        font-size: 14px;
+        position: relative;
+        @include mq('desktop'){
+          font-size: 16px;
+        }
+        &::before {
+            content: "";
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: #F6D452;
+            position: absolute;
+            left: -20px;
+            top: 1em;
+            transform: translateY(-50%);
+          }
+      }
+  }
+}

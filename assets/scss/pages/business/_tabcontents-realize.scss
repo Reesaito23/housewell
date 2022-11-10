@@ -1,0 +1,37 @@
+.tabcontents-realize{
+  margin-top: 30px;
+  @include mq('desktop'){
+    margin-top: 50px;
+  }
+  &__block{
+    display: flex;
+    margin-top: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    @include mq('desktop'){
+      flex-direction: initial;
+      margin-top: 40px;
+    }
+  }
+  &__textarea{
+    margin-top: 20px;
+    @include mq('desktop'){
+      margin-top: 0px;
+      padding-left: 3%;
+      width: 55%;
+    }
+  }
+  &__image{
+    width: 100%;
+    @include mq('desktop'){
+      width: 45%;
+    }
+  }
+  &__text{
+    font-size: 12px;
+    line-height: 2;
+    @include mq('desktop'){
+      font-size: 16px;
+    }
+  }
+}

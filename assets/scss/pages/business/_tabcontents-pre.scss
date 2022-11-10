@@ -1,0 +1,17 @@
+.tabcontents-pre{
+  margin-top: 50px;
+  padding-right: 5%;
+  padding-left: 5%;
+  @include mq('desktop'){
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+  &__image{
+    width: 100%;
+    @include mq('desktop'){
+      width: 50%;
+    }
+  }
+}

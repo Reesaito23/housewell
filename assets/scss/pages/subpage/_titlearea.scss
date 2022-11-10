@@ -58,5 +58,10 @@
         content: url("../image/common/section-title-icon--green.webp");
       }
     }
+    &--yellow{
+      &::before{
+        content: url("../image/common/section-title-icon--yellow.webp");
+      }
+    }
   }
 }

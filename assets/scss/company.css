@@ -145,6 +145,9 @@
 .titlearea__title--green::before {
   content: url("../image/common/section-title-icon--green.webp");
 }
+.titlearea__title--yellow::before {
+  content: url("../image/common/section-title-icon--yellow.webp");
+}
 
 .subpage-section-title {
   font-size: 32px;
@@ -165,6 +168,12 @@
   position: absolute;
   height: 28px;
 }
+.subpage-section-title .num {
+  font-size: 11px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0.8em;
+}
 .subpage-section-title .sub {
   display: block;
   font-size: 16px;
@@ -177,6 +186,9 @@
 }
 .subpage-section-title--green::before {
   content: url("../image/common/section-title-icon--green.webp");
+}
+.subpage-section-title--yellow::before {
+  content: url("../image/common/section-title-icon--yellow.webp");
 }
 
 .message {

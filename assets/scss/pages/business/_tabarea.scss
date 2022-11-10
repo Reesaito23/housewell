@@ -1,0 +1,14 @@
+.tabarea{
+  border-bottom: 1px solid #BFBFBF;
+  &__block{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0px;
+    margin-top: 50px;
+    padding-bottom: 70px;
+    @include mq('desktop'){
+      margin-top: 100px;
+      padding-bottom: 140px;
+    }
+  }
+}

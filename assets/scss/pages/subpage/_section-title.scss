@@ -14,6 +14,12 @@
     position: absolute;
     height: 28px;
   }
+  .num{
+    font-size: 11px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: .8em;
+  }
   .sub{
     display: block;
     font-size: 16px;
@@ -31,6 +37,11 @@
   &--green{
     &::before {
       content: url("../image/common/section-title-icon--green.webp");
+    }
+  }
+  &--yellow{
+    &::before {
+      content: url("../image/common/section-title-icon--yellow.webp");
     }
   }
 }
