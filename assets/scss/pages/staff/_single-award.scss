@@ -1,0 +1,42 @@
+.single-award{
+  margin-top: 60px;
+  @include mq('desktop'){
+    margin-top: 120px;
+  }
+  &__title{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    padding: 20px 0;
+    border-bottom: 1px solid #2C6EB3;
+    @include mq('desktop'){
+      font-size: 26px;
+    }
+  }
+  &__list{
+    margin-top: 10px;
+    display: grid;
+    gap: 10px 40px;
+    grid-template-columns: repeat(1,1fr);
+    @include mq('desktop'){
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 20px;
+    }
+    li{
+      font-size: 14px;
+      position: relative;
+      padding: 20px 0 20px 50px;
+      border-bottom: 1px solid #E0E0E0;
+      @include mq('desktop'){
+        font-size: 16px;
+      }
+
+      &::after{
+        content: url("../image/common/icon-award--blue.svg");
+        position: absolute;
+        left: 10px;
+        top: 20px;
+      }
+    }
+  }
+}

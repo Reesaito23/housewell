@@ -1,0 +1,14 @@
+.single{
+  margin-top: 30px;
+  @include mq('desktop'){
+    margin-top: 60px;
+  }
+  &__contents{
+    margin-top: 50px;
+    padding-bottom: 60px;
+    @include mq('desktop'){
+      margin-top: 100px;
+      padding-bottom: 120px;
+    }
+  }
+}
