@@ -1,0 +1,22 @@
+.c-awardpage-section-title{
+  background-color: rgba($color: #DF7E2C, $alpha: 0.06);
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  padding: 20px 20px 20px 40px;
+  @include mq('desktop'){
+    font-size: 26px;
+    padding: 20px 20px 20px 60px;
+  }
+  &::before{
+    content: url("../image/common/section-title-icon--orange.webp");
+    top: 0.7em;
+    left: 10px;
+    transform: translateY(0%) scale(0.6);
+    position: absolute;
+    @include mq('desktop'){
+      left: 20px;
+      transform: translateY(0%) scale(0.8);
+    }
+  }
+}

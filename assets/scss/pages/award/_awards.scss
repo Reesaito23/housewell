@@ -1,0 +1,52 @@
+.awards{
+  margin-top: 50px;
+  padding-bottom: 80px;
+  @include mq('desktop'){
+    margin-top: 100px;
+    padding-bottom: 160px;
+  }
+  &__block{
+    &:not(:first-child){
+      margin-top: 50px;
+      @include mq('desktop'){
+        margin-top: 100px;
+      }
+    }
+  }
+  &__list{
+    margin-top: 5px;
+    display: grid;
+    gap: 10px 0;
+    grid-template-columns: repeat(1,1fr);
+    li{
+      font-size: 14px;
+      position: relative;
+      padding: 20px 0 20px 40px;
+      border-bottom: 1px solid #E0E0E0;
+      display: flex;
+      @include mq('desktop'){
+        padding: 20px 0 20px 50px;
+        font-size: 16px;
+      }
+      .year{
+        white-space: nowrap;
+        width: 64px;
+        @include mq('desktop'){
+          width: 90px;
+        }
+      }
+
+      &::after{
+        content: url("../image/common/icon-award--orange.svg");
+        position: absolute;
+        left: 6px;
+        top: 15px;
+        transform: scale(.9);
+        @include mq('desktop'){
+          transform: scale(1); 
+          left: 10px;
+        }
+      }
+    }
+  }
+}
