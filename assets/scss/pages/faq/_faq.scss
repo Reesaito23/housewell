@@ -1,0 +1,8 @@
+.faq{
+  margin-top: 50px;
+  padding-bottom: 80px;
+  @include mq('desktop'){
+    margin-top: 100px;
+    padding-bottom: 200px;
+  }
+}
