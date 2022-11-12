@@ -1,0 +1,22 @@
+.news-nav{
+  display: flex;
+  justify-content: space-between;
+  &__item{
+    padding: 16px 0;
+    width: 32%;
+    display: block;
+    border-bottom: 1px solid #E0E0E0;
+    color: #919191;
+    font-size: 15px;
+    text-align: center;
+    @include mq('desktop'){
+      padding: 20px 0;
+    }
+  }
+}
+#news-news:checked~.news-nav .news-nav__item-news,
+#news-media:checked~.news-nav .news-nav__item-media,
+#news-ir:checked~.news-nav .news-nav__item-ir {
+  border-bottom: 1px solid #000000;
+  color: #333333;
+}
