@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="assets/css/destyle.css">
     <link rel="stylesheet" href="assets/scss/common.css">
-    <link rel="stylesheet" href="assets/scss/staff.css">
+    <link rel="stylesheet" href="assets/scss/contact.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,99 +80,58 @@
     <section class="titlearea c-layout--lv2">
       <div class="titlearea__breadcrumbs">
         <a href="index.html">TOP ></a>
-        <p>スタッフ紹介</p>
+        <p>お問い合わせ</p>
       </div>
-      <h1 class="titlearea__title titlearea__title--blue">STAFF<span class="ja">スタッフ紹介</span></h1>
+      <h1 class="titlearea__title titlearea__title--yellow">CONTACT<span class="ja">お問い合わせ</span></h1>
     </section>
 
-    <!-- Staff メンバー紹介 -->
-    <section class="staff">
-      <div class="staff-department c-layout--lv0">
-        <h2 class="subpage-section-title subpage-section-title--blue">不動産コンサルティング事業部1課</h2>
-        <div class="staff-department__members c-layout--lv1">
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image" src="assets/image/staff/staff-01.webp" alt=""></div>
-            <p class="staff-department-member__name">宮前 雅一</p>
-            <p class="staff-department-member__label">宅地建物取引士</p>
-          </a>
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image"
-                src="assets/image/staff/staff-02.webp" alt=""></div>
-            <p class="staff-department-member__name">宮下 光輔</p>
-            <p class="staff-department-member__label">宅地建物取引士</p>
-          </a>
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image"
-                src="assets/image/staff/staff-03.webp" alt=""></div>
-            <p class="staff-department-member__name">今里　亮</p>
-            <!-- <p class="staff-department-member__label">宅地建物取引士</p> -->
-          </a>
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image"
-                src="assets/image/staff/staff-04.webp" alt=""></div>
-            <p class="staff-department-member__name">小林 佑太</p>
-            <p class="staff-department-member__label">宅地建物取引士</p>
-          </a>
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image"
-                src="assets/image/staff/staff-05.webp" alt=""></div>
-            <p class="staff-department-member__name">坂西 大樹</p>
-            <!-- <p class="staff-department-member__label">宅地建物取引士</p> -->
-          </a>
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image"
-                src="assets/image/staff/staff-01.webp" alt=""></div>
-            <p class="staff-department-member__name">宮前 雅一</p>
-            <p class="staff-department-member__label">宅地建物取引士</p>
-          </a>
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image"
-                src="assets/image/staff/staff-02.webp" alt=""></div>
-            <p class="staff-department-member__name">宮下 光輔</p>
-            <p class="staff-department-member__label">宅地建物取引士</p>
-          </a>
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image"
-                src="assets/image/staff/staff-03.webp" alt=""></div>
-            <p class="staff-department-member__name">今里　亮</p>
-            <!-- <p class="staff-department-member__label">宅地建物取引士</p> -->
-          </a>
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image"
-                src="assets/image/staff/staff-04.webp" alt=""></div>
-            <p class="staff-department-member__name">小林 佑太</p>
-            <p class="staff-department-member__label">宅地建物取引士</p>
-          </a>
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image"
-                src="assets/image/staff/staff-05.webp" alt=""></div>
-            <p class="staff-department-member__name">坂西 大樹</p>
-            <!-- <p class="staff-department-member__label">宅地建物取引士</p> -->
-          </a>
+    <!-- CONTACT お問い合わせ -->
+    <section class="contact c-layout--lv2">
+      <div class="contact-item">
+        <p class="contact-item__label">お問い合わせの種類<span class="require">必須</span></p>
+        <div class="contact-item__block contact-item__block-radio">
+          <input type="radio" name="purpose" id="purpose01" checked>
+          <label for="purpose01">不動産関係について(toC)</label>
+          <input type="radio" name="purpose" id="purpose02">
+          <label for="purpose02">採用について</label>
+          <input type="radio" name="purpose" id="purpose03">
+          <label for="purpose03">ハウスウェルへの意見</label>
+          <input type="radio" name="purpose" id="purpose04">
+          <label for="purpose04">その他</label>
         </div>
       </div>
-      <div class="staff-department c-layout--lv0">
-        <h2 class="subpage-section-title subpage-section-title--blue">不動産コンサルティング事業部2課</h2>
-        <div class="staff-department__members c-layout--lv1">
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image"
-                src="assets/image/staff/staff-01.webp" alt=""></div>
-            <p class="staff-department-member__name">宮前 雅一</p>
-            <p class="staff-department-member__label">宅地建物取引士</p>
-          </a>
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image"
-                src="assets/image/staff/staff-02.webp" alt=""></div>
-            <p class="staff-department-member__name">宮下 光輔</p>
-            <p class="staff-department-member__label">宅地建物取引士</p>
-          </a>
-          <a href="staff-single.html" class="staff-department__member staff-department-member">
-            <div class="staff-department-member__imageblock"><img class="staff-department-member__image"
-                src="assets/image/staff/staff-03.webp" alt=""></div>
-            <p class="staff-department-member__name">今里　亮</p>
-            <!-- <p class="staff-department-member__label">宅地建物取引士</p> -->
-          </a>
+      <div class="contact-item items-center">
+        <p class="contact-item__label">お名前<span class="require">必須</span></p>
+        <div class="contact-item__block contact-item__block-text name">
+          <input type="text" name="name" id="">
         </div>
+      </div>
+      <div class="contact-item items-center">
+        <p class="contact-item__label">メールアドレス<span class="require">必須</span></p>
+        <div class="contact-item__block contact-item__block-text email">
+          <input type="email" name="email" id="">
+        </div>
+      </div>
+      <div class="contact-item items-center">
+        <p class="contact-item__label">電話番号</p>
+        <div class="contact-item__block contact-item__block-text tel">
+          <input type="tel" name="tel" id="">
+        </div>
+      </div>
+      <div class="contact-item items-center">
+        <p class="contact-item__label">ご住所</p>
+        <div class="contact-item__block contact-item__block-text address">
+          <input type="text" name="address" id="">
+        </div>
+      </div>
+      <div class="contact-item">
+        <p class="contact-item__label">お問い合わせ内容<span class="require">必須</span></p>
+        <div class="contact-item__block contact-item__block-text textarea">
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="contact__button">
+        <button type="submit">送信する</button>
       </div>
     </section>
 
@@ -344,15 +303,11 @@
         header.toggleClass(SPheader_Active_ClassName);
       });
 
-      // 沿革のdotに1列の高さを付与する。
-      $(window).on('load', function (){
-        const historyDot = [$('.history__dot')];
-        const historyRow = [$('.history__row')];
-        for(let i = 0;i<historyDot.length;i++){
-          const historyRowHeight = historyRow[i].outerHeight();
-          historyDot[i].css('height', historyRowHeight);
-          console.log(historyRowHeight);
-        }
+      //よくあるご質問 クリックしたら開く
+      $FAQ_target_ClassName = $('.faq-item')
+      FAQ_Active_ClassName = "is-active"
+      $FAQ_target_ClassName.on('click', function () {
+        $(this).toggleClass(FAQ_Active_ClassName);
       });
     </script>
   </body>

@@ -1,0 +1,41 @@
+.contact{
+  margin-top: 30px;
+  padding-bottom: 100px;
+  @include mq('desktop'){
+    margin-top: 50px;
+    padding-bottom: 200px;
+  }
+  &__button{
+    margin-top: 40px;
+    @include mq('desktop'){
+      margin-top: 80px;
+    }
+    button{
+      display: block;
+      max-width: 400px;
+      text-align: center;
+      background-color: #45B0BA;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      position: relative;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px 0;
+      &::after{
+        content: "";
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: rotate(45deg);
+        right: 5%;
+        width: 0.5em;
+        height: 0.5em;
+      }
+    }
+  }
+}
