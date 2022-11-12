@@ -1,0 +1,60 @@
+.sitemap{
+  margin-top: 30px;
+  padding-bottom: 70px;
+  @include mq('desktop'){
+    margin-top: 60px;
+    padding-bottom: 140px;
+  }
+  &__block{
+    &:not(:first-child){
+      margin-top: 60px;
+    }
+  }
+  &__title{
+    border-bottom: 1px solid #D85D83;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px 0;
+    font-size: 14px;
+    margin-top: 20px;
+    @include mq('desktop'){
+      font-size: 16px;
+      margin-top: 40px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    li{
+      position: relative;
+      &::after{
+        content: url("../image/common/section-title-icon--pink.webp");
+        position: absolute;
+        left: 0px;
+        top: -.1em;
+        transform-origin: left top;
+        transform: scale(.6);
+        @include mq('desktop'){
+          top: 48%;
+          transform: translateY(-50%)scale(.6);
+          transform-origin: left;
+        }
+      }
+    }
+    .recruit{
+      a{
+        display: flex;
+        align-items: center;
+        img{
+          margin-left: 5px;
+        }
+      }
+    }
+    a{
+      display: block;
+      padding-left: 25px;
+    }
+  }
+}

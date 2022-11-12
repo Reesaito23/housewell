@@ -49,4 +49,9 @@
       content: url("../image/common/section-title-icon--blue.webp");
     }
   }
+  &--pink{
+    &::before {
+      content: url("../image/common/section-title-icon--pink.webp");
+    }
+  }
 }

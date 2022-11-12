@@ -1,0 +1,9 @@
+.service{
+  background-color: #FAFAFA;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  @include mq('desktop'){
+    padding-top: 120px;
+    padding-bottom: 200px;
+  }
+}

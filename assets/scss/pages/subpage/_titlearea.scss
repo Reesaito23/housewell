@@ -73,5 +73,10 @@
         content: url("../image/common/section-title-icon--orange.webp");
       }
     }
+    &--pink{
+      &::before{
+        content: url("../image/common/section-title-icon--pink.webp");
+      }
+    }
   }
 }

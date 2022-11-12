@@ -153,6 +153,9 @@
 .titlearea__title--orange::before {
   content: url("../image/common/section-title-icon--orange.webp");
 }
+.titlearea__title--pink::before {
+  content: url("../image/common/section-title-icon--pink.webp");
+}
 
 .subpage-section-title {
   font-size: 32px;
@@ -197,6 +200,9 @@
 }
 .subpage-section-title--blue::before {
   content: url("../image/common/section-title-icon--blue.webp");
+}
+.subpage-section-title--pink::before {
+  content: url("../image/common/section-title-icon--pink.webp");
 }
 
 .contact {
