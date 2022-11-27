@@ -27,11 +27,13 @@
   }
   &__list{
     width: 430px;
-    margin-top: 0px;
     padding-left: 30px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px 55px;
+    @include mq('desktop'){
+      margin-top: 20px;
+    }
     li {
         line-height: 2;
         font-size: 14px;
