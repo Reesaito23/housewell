@@ -295,10 +295,12 @@
   width: 100%;
 }
 
+.information-list-item {
+  display: flex;
+  justify-content: space-between;
+}
 @media screen and (min-width: 768px) {
   .information-list-item {
-    display: flex;
-    justify-content: space-between;
     position: relative;
   }
 }
@@ -307,36 +309,33 @@
   text-align: center;
   font-size: 14px;
   border-bottom: 1px solid #45B0BA;
+  width: 28%;
 }
 @media screen and (min-width: 768px) {
   .information-list-item__label {
-    width: 28%;
     padding: 40px 0;
     font-size: 17px;
   }
 }
 .information-list-item__block {
-  padding: 20px 0px;
+  padding: 20px 10px;
   border-bottom: 1px solid #E0E0E0;
-  text-align: center;
   font-size: 12px;
+  width: 68%;
 }
 @media screen and (min-width: 768px) {
   .information-list-item__block {
-    width: 68%;
-    text-align: left;
     padding: 40px 20px;
     font-size: 17px;
   }
 }
 .information-list-item__block.two {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
 }
 @media screen and (min-width: 768px) {
   .information-list-item__block.two {
-    justify-content: flex-start;
     gap: 20px;
     font-size: 16px;
   }
@@ -359,10 +358,12 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
-.information-list-item__block-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .information-list-item__block-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .information-list-item__text {
   line-height: 2;
@@ -379,11 +380,14 @@
   text-align: center;
   font-size: 12px;
   position: relative;
+  display: block;
+  margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .information-list-item__button {
     font-size: 14px;
     width: 200px;
+    margin-top: 0px;
   }
 }
 .information-list-item__button::after {

@@ -1,7 +1,7 @@
 .information-list-item{
+  display: flex;
+  justify-content: space-between;
   @include mq('desktop'){
-    display: flex;
-    justify-content: space-between;
     position: relative;
   }
   &__label{
@@ -9,29 +9,26 @@
     text-align: center;
     font-size: 14px;
     border-bottom: 1px solid #45B0BA;
+    width: 28%;
     @include mq('desktop'){
-      width: 28%;
       padding: 40px 0;
       font-size: 17px;
     }
   }
   &__block{
-    padding: 20px 0px;
+    padding: 20px 10px;
     border-bottom: 1px solid #E0E0E0;
-    text-align: center;
     font-size: 12px;
+    width: 68%;
     @include mq('desktop'){
-      width: 68%;
-      text-align: left;
       padding: 40px 20px;
       font-size: 17px;
     }
     &.two{
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 20px;
       @include mq('desktop'){
-        justify-content: flex-start;
         gap: 20px;
         font-size: 16px;
       }
@@ -53,9 +50,11 @@
       gap: 10px;
     }
     &-flex{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include mq('desktop'){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
   }
   &__text{
@@ -73,9 +72,12 @@
     text-align: center;
     font-size: 12px;
     position: relative;
+    display: block;
+    margin-top: 20px;
     @include mq('desktop'){
       font-size: 14px;
       width: 200px;
+      margin-top:0px;
     }
     &::after{
       content: "";
