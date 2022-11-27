@@ -631,6 +631,9 @@
     font-size: 24px;
   }
 }
+.flow__flag-image {
+  width: 100%;
+}
 .flow.business-01 .flow__block {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 0px;
