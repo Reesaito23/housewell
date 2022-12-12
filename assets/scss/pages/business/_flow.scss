@@ -85,4 +85,30 @@
         }
       }
     }
+    &.business-06 {
+      .flow {
+        &__block {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px 0px;
+  
+          @include mq('desktop') {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 36px 0px;
+          }
+        }
+  
+        &__item {
+          margin-right: -12px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          &:nth-of-type(3){
+            p{
+              font-size: 20px;
+              white-space: initial;
+            }
+          }
+        }
+      }
+    }
 }
